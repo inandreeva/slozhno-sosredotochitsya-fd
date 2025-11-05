@@ -1,6 +1,7 @@
 :root {
   --color-text-primary: #FF0070;
+  --color-text-secondary: #DB00FF;
   --color-background-primary: #000028;
   --accent-color: #FF0070;
-  --color-text-secondary: #DB00FF;
+  --color-text-paragraph: #F1B2CE;
 }

@@ -32,6 +32,12 @@
   }
 }
 
+@media (width >=1024px) {
+  .header {
+    min-block-size: 768px;
+  }
+}
+
 .header__decorated-item {
   display: inline-block;
   position: absolute;
@@ -105,11 +111,27 @@
   align-self: center;
 }
 
+@media (width >=1024px) {
+  .header__theme-menu {
+    justify-self: center;
+    align-self: start;
+    padding-inline-start: 20px;
+    padding-block-start: 8px;
+  }
+}
+
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
   list-style-type: none;
+}
+
+@media (width >=1024px) {
+  .header__theme-menu-list {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .header__theme-menu-button {
@@ -136,7 +158,7 @@
 
 .header__title {
   color: var(--color-text-secondary);
-  font-size: var(--title-h1-font-size);
+  font-size: var(--title-h1-font-size-mobil);
   text-shadow: 4px 4px 0 var(--accent-color);
   text-transform: lowercase;
   line-height: 0.8;
@@ -157,13 +179,34 @@
   }
 }
 
+@media (width >=1024px) {
+  .header__title {
+    font-size: var(--title-h1-font-size-screen);
+    line-height: 0.8;
+  }
+
+  .header__description {
+    inline-size: 491px;
+    justify-self: end;
+  }
+}
+
 .title-decor {
   color: var(--color-background-primary);
   background-color: var(--color-text-primary);
 }
 
 /* Section styles */
-/* Text styles */
+.section {
+  padding-inline: 10px;
+}
+
+@media (width >=768px) {
+  .section {
+    padding-inline: 20px;
+  }
+}
+
 .section__title {
   font-size: 18px;
   font-weight: 700;
@@ -182,21 +225,8 @@
   margin-block-end: 10px;
 }
 
-.section__advice-title {
-  font-weight: 400;
-  line-height: 1.3;
-  color: var(--color-background-primary);
-  align-self: start;
-  margin-block-start: 20px;
-  margin-block-end: 10px;
-}
-
-.images-gallery__title {
-  font-size: 18px;
-  line-height: 1.1;
-  color: var(--color-background-primary);
-  align-self: start;
-  margin-block-end: 10px;
+.section__card {
+  margin-block-end: 20px;
 }
 
 .section__text {
@@ -222,20 +252,6 @@
   outline: 1px solid var(--color-text-paragraph);
 }
 
-.section {
-  padding-inline: 10px;
-}
-
-.section__card {
-  margin-block-end: 20px;
-}
-
-@media (width >=768px) {
-  .section {
-    padding-inline: 20px;
-  }
-}
-
 .why-section {
   display: grid;
   margin-block-start: 40px;
@@ -246,6 +262,12 @@
     grid-template-columns: 1fr 2fr;
     gap: 20px;
     margin-block-start: 60px;
+  }
+}
+
+@media (width >=1024px) {
+  .why-section {
+    gap: 10px;
   }
 }
 
@@ -272,6 +294,20 @@
   }
 }
 
+@media (width >=1024px) {
+  .what-section {
+    grid-template-columns: 300px 1fr;
+  }
+
+  .what-section__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+}
+
 .how-section {
   display: grid;
   margin-block-start: 50px;
@@ -283,6 +319,29 @@
     gap: 20px;
     margin-block-start: 60px;
   }
+}
+
+@media (width >=1024px) {
+  .how-section {
+    gap: 10px;
+  }
+}
+
+.section__advice-title {
+  font-weight: 400;
+  line-height: 1.3;
+  color: var(--color-background-primary);
+  align-self: start;
+  margin-block-start: 20px;
+  margin-block-end: 10px;
+}
+
+.images-gallery__title {
+  font-size: 18px;
+  line-height: 1.1;
+  color: var(--color-background-primary);
+  align-self: start;
+  margin-block-end: 10px;
 }
 
 .images-section {
@@ -346,6 +405,12 @@
   }
 }
 
+@media (width >=1024px) {
+  .images-section__gallery {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
 /* Footer */
 .footer {
   position: relative;
@@ -360,7 +425,7 @@
 
 .footer__title {
   color: var(--color-text-secondary);
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-size: var(--title-h1-font-size-mobil);
   text-shadow: 4px 4px 0 var(--accent-color);
   text-transform: lowercase;
   line-height: 0.9;
@@ -368,11 +433,19 @@
 }
 
 @media (width >=768px) {
-  .foote {
+  .footer {
+    min-block-size: 1024px;
     padding: 20px;
-    ;
+    margin-block-start: 60px;
+  }
+
+  .footer__title {
+    font-size: var(--title-h1-font-size-screen);
   }
 }
 
-
-@media (width >=1024px) {}
+@media (width >=1024px) {
+  .footer {
+    min-block-size: 768px;
+  }
+}

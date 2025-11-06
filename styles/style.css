@@ -2,7 +2,7 @@
   font-size: 18px;
   font-family: "IBM Plex mono", monospace, sans-serif;
 
-  background-image: url("../images/cover-image-dark.png");
+  background-image: var(--backround-image);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -70,6 +70,17 @@
     0 0 14px var(--color-text-primary);
 }
 
+:root.theme-light .header__decorated-item {
+  display: none;
+}
+
+:root.theme-auto {
+  @media (prefers-color-scheme: light) {
+    .header__decorated-item {
+      display: none;
+    }
+  }
+}
 
 .decorated-zone::before,
 .decorated-zone::after {

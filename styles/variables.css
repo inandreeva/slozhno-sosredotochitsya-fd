@@ -4,6 +4,11 @@
   --color-background-primary: #000028;
   --accent-color: #FF0070;
   --color-text-paragraph: #F1B2CE;
+  --color-decorated-item: #FF0070;
+  --color-menu-button: #FF0070;
+  --color-title-text: #000028;
+  --color-title-background: #FF0070;
+  --color-link-shadow: #FF0070;
 
   --backround-image: url('../images/cover-image-dark.png');
 

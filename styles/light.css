@@ -6,10 +6,15 @@
 
 :root.theme-light {
   --color-text-primary: #FF8DCB;
-  --color-text-secondary: #FF8DCB;
+  --color-text-secondary: #FFC2E6;
   --color-background-primary: #FFF1F7;
-  --accent-color: #FF0070;
+  --accent-color: #FF8DCB;
   --color-text-paragraph: #353430;
+  --color-decorated-item: #353430;
+  --color-menu-button: #353430;
+  --color-title-text: #353430;
+  --color-title-background: #FF8DCB;
+  --color-link-shadow: #FF8DCB;
 
   --backround-image: url('../images/cover-image-light.png');
 }

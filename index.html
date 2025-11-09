@@ -15,51 +15,51 @@
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
     <title>Сложно сосредоточиться</title>
-    <script src="./scripts/script.js"></script>
+    <script src="./scripts/script.js" defer></script>
   </head>
   <body class="page">
-    <main>
-      <header class="header decorated-zone">
-        <span class="header__decorated-item" aria-hidden="true">REC</span>
-        <nav class="header__theme-menu" aria-label="Выбор темы">
-          <ul class="header__theme-menu-list">
-            <li class="header__theme-menu-item">
-              <button
-                class="header__theme-menu-button header__theme-menu-button_type_light"
-              >
-                День
-              </button>
-            </li>
-            <li class="header__theme-menu-item">
-              <button
-                class="header__theme-menu-button header__theme-menu-button_type_auto"
-                disabled
-              >
-                Авто
-              </button>
-            </li>
-            <li class="header__theme-menu-item">
-              <button
-                class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_dark"
-              >
-                Неон
-              </button>
-            </li>
-          </ul>
-        </nav>
-        <h1 class="header__title">no focus</h1>
-        <div class="header__description title-decor">
-          <p>Что делать, когда не можешь делать ничего</p>
-          <p>
-            Или почему нам так сложно сконцентрироваться, особенно когда очень
-            надо
-          </p>
-        </div>
-      </header>
+    <header class="header decorated-zone">
+      <span class="header__decorated-item" aria-hidden="true">REC</span>
+      <nav class="header__theme-menu" aria-label="Выбор темы">
+        <ul class="header__theme-menu-list">
+          <li class="header__theme-menu-item">
+            <button
+              class="header__theme-menu-button header__theme-menu-button_type_light"
+            >
+              День
+            </button>
+          </li>
+          <li class="header__theme-menu-item">
+            <button
+              class="header__theme-menu-button header__theme-menu-button_type_auto"
+              disabled
+            >
+              Авто
+            </button>
+          </li>
+          <li class="header__theme-menu-item">
+            <button
+              class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_dark"
+            >
+              Неон
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="header__title">no focus</h1>
+      <div class="header__description title-decor">
+        <p>Что делать, когда не можешь делать ничего</p>
+        <p>
+          Или почему нам так сложно сконцентрироваться, особенно когда очень
+          надо
+        </p>
+      </div>
+    </header>
 
+    <main>
       <section class="section why-section">
         <h2 class="section__title">Почему сосредоточиться так сложно</h2>
-        <div class="why-section__cards">
+        <article class="cards-grid">
           <div class="section__card">
             <h3 class="section__subtitle title-decor">Многозадачность</h3>
             <p class="section__text">
@@ -67,7 +67,7 @@
               важные. Где же легендарная многозадачность, когда она так нужна
               вам (и всем нанимающим менеджерам этого мира)? А дело в том, что
               её просто не существует. Исследователи
-              <a class="text-link">выяснили</a>, что мозгу тяжело
+              <a class="text-link" href="#">выяснили</a>, что мозгу тяжело
               концентрироваться даже на двух делах одновременно. А когда в поле
               внимания попадает несколько важных задач, организм паникует и
               выделяет кортизол и адреналин — «гормоны стресса». Из-за этого мы
@@ -87,12 +87,12 @@
               отвлекаешься, тем больше удовольствия получаешь.
             </p>
           </div>
-        </div>
+        </article>
       </section>
 
       <section class="section what-section">
         <h2 class="section__title">Что снижает концентрацию внимания?</h2>
-        <div class="what-section__cards">
+        <article class="cards-grid what-section__cards">
           <div class="section__card">
             <h3 class="section__subtitle title-decor">Многозадачность</h3>
             <p class="section__text">
@@ -127,7 +127,7 @@
               тем больше времени затем нужно, чтобы вернуться к работе.
             </p>
           </div>
-        </div>
+        </article>
       </section>
 
       <section class="section how-section">
@@ -135,12 +135,12 @@
           Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
           секунд)
         </h2>
-        <div class="how-section__cards">
+        <article class="cards-grid">
           <h3 class="section__subtitle title-decor">
             5 простых (на самом деле не очень) советов
           </h3>
-          <div class="section__card">
-            <h4 class="section__advice-title title-decor">
+          <div class="section__card section__card_how-section">
+            <h4 class="section__subtitle section__advice-title title-decor">
               Представьте небо и облака
             </h4>
             <p class="section__text">
@@ -154,8 +154,10 @@
               проблемах из будущего.
             </p>
           </div>
-          <div class="section__card">
-            <h4 class="section__advice-title title-decor">Включите музыку</h4>
+          <div class="section__card section__card_how-section">
+            <h4 class="section__subtitle section__advice-title title-decor">
+              Включите музыку
+            </h4>
             <p class="section__text">
               Но не любую, и не любимую. Любимая может быть связана с сильными
               положительными эмоциями, которые тоже очень сильно отвлекают.
@@ -163,20 +165,24 @@
               попробовать включить плейлист с «белым шумом» или нейромузыкой.
             </p>
           </div>
-          <div class="section__card">
-            <h4 class="section__advice-title title-decor">Прогуляйтесь</h4>
+          <div class="section__card section__card_how-section">
+            <h4 class="section__subtitle section__advice-title title-decor">
+              Прогуляйтесь
+            </h4>
             <p class="section__text">
               Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
-              <a class="text-link">показал</a>, что созерцание природы повышает
-              концентрацию, в то время как после просмотра городских пейзажей
-              она наоборот понижается. Можно совместить прогулку с физическими
-              упражнениями или бегом — так в мозг поступит ещё больше кислорода
-              и он будет лучше работать. Но и простая двадцатиминутная прогулка
-              — тоже отличный вариант.
+              <a class="text-link" href="#">показал</a>, что созерцание природы
+              повышает концентрацию, в то время как после просмотра городских
+              пейзажей она наоборот понижается. Можно совместить прогулку с
+              физическими упражнениями или бегом — так в мозг поступит ещё
+              больше кислорода и он будет лучше работать. Но и простая
+              двадцатиминутная прогулка — тоже отличный вариант.
             </p>
           </div>
-          <div class="section__card">
-            <h4 class="section__advice-title title-decor">Хорошо ешьте</h4>
+          <div class="section__card section__card_how-section">
+            <h4 class="section__subtitle section__advice-title title-decor">
+              Хорошо ешьте
+            </h4>
             <p class="section__text">
               Мы — не ваша бабушка, но это правда важно. Выбирайте продукты,
               которые препятствуют резким скачкам сахара в крови. Например, с
@@ -184,8 +190,10 @@
               чечевица, фасоль), коричневый рис, хлеб из цельнозерновой пшеницы.
             </p>
           </div>
-          <div class="section__card">
-            <h4 class="section__advice-title title-decor">Читайте</h4>
+          <div class="section__card section__card_how-section">
+            <h4 class="section__subtitle section__advice-title title-decor">
+              Читайте
+            </h4>
             <p class="section__text">
               Настоящие бумажные книги. Это правда помогает с концентрацией:
               чтобы прочитать пост в соцсети, достаточно нескольких минут или
@@ -193,11 +201,11 @@
               несколько часов и круто тренирует направленное внимание.
             </p>
           </div>
-        </div>
+        </article>
       </section>
 
       <section class="section images-section">
-        <h3 class="images-gallery__title title-decor">А можно в картинках?</h3>
+        <h2 class="section__subtitle title-decor">А можно в картинках?</h2>
         <div class="images-section__gallery">
           <img
             class="images-section__item sunset-image"
@@ -232,8 +240,9 @@
         </div>
       </section>
     </main>
+
     <footer class="footer decorated-zone">
-      <div class="footer__title">focus</div>
+      <p class="footer__title">focus</p>
     </footer>
   </body>
 </html>

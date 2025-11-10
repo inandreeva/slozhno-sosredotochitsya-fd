@@ -19,12 +19,24 @@
 
   --background-image: url('../images/cover-image-light.png');
 
-  --title-h1-font-size-mobil: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --title-h1-font-size-screen: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  --text-body-font-size: 18px;
-  --text-body-weight: 400;
-  --text-body-bold-weight: 700;
+}
 
+@media (prefers-color-scheme: light) {
+  :root.theme-auto {
+    --color-text-primary: #FF8DCB;
+    --color-text-secondary: #FFC2E6;
+    --color-background-primary: #FFF1F7;
+    --accent-color: #FF8DCB;
+    --color-text-paragraph: #353430;
+    --color-decorated-item: #353430;
+    --color-menu-button: #353430;
+    --color-title-text: #353430;
+    --color-subtitle-text: #353430;
+    --color-title-background: #FF8DCB;
+    --color-link-shadow: #FF8DCB;
+
+    --background-image: url('../images/cover-image-light.png');
+  }
 }
 
 :root.theme-light .header__decorated-item {

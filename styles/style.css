@@ -159,7 +159,7 @@
 /* Header title and description */
 .header__title {
   color: var(--color-text-secondary);
-  font-size: var(--title-h1-font-size-mobil);
+  font-size: var(--title-font-size-mobil);
   font-weight: var(--text-body-bold-weight);
   text-shadow: 4px 4px 0 var(--accent-color);
   text-transform: lowercase;
@@ -185,7 +185,7 @@
 
 @media (width >=1024px) {
   .header__title {
-    font-size: var(--title-h1-font-size-screen);
+    font-size: var(--title-font-size-screen);
     line-height: 0.8;
   }
 
@@ -428,7 +428,7 @@
 
 .footer__title {
   color: var(--color-text-secondary);
-  font-size: var(--title-h1-font-size-mobil);
+  font-size: var(--title-font-size-mobil);
   font-weight: var(--text-body-bold-weight);
   text-shadow: 2px 2px 0 var(--accent-color);
   text-transform: lowercase;
@@ -443,7 +443,7 @@
   }
 
   .footer__title {
-    font-size: var(--title-h1-font-size-screen);
+    font-size: var(--title-font-size-screen);
   }
 }
 
